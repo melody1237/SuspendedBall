@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SuspendedBall.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"第一个控制器";
     self.view.backgroundColor = [UIColor grayColor];
     
     SuspendedBall *ball = [[SuspendedBall alloc] initWithFrame:CGRectMake(0, 100, 60, 60)];
@@ -27,6 +28,8 @@
     ball.clickBall = ^{
         // 这里可以处理点击事件
         NSLog(@"图片被点击");
+        SecondViewController *secondVC = [[SecondViewController alloc] init];
+        [self.navigationController pushViewController:secondVC animated:YES];
     };
     
     [self.view addSubview:ball];

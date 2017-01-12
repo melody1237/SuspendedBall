@@ -18,6 +18,7 @@
 		C54AFCD91E260F2400F203C6 /* SuspendedBall.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AFCD81E260F2400F203C6 /* SuspendedBall.m */; };
 		C54AFCDC1E260F3900F203C6 /* SuspendedBall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54AFCDA1E260F3900F203C6 /* SuspendedBall@2x.png */; };
 		C54AFCDD1E260F3900F203C6 /* touxiang.png in Resources */ = {isa = PBXBuildFile; fileRef = C54AFCDB1E260F3900F203C6 /* touxiang.png */; };
+		C55F1AEB1E2732B800EF86D7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C55F1AEA1E2732B800EF86D7 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		C54AFCD81E260F2400F203C6 /* SuspendedBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendedBall.m; sourceTree = "<group>"; };
 		C54AFCDA1E260F3900F203C6 /* SuspendedBall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SuspendedBall@2x.png"; sourceTree = "<group>"; };
 		C54AFCDB1E260F3900F203C6 /* touxiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touxiang.png; sourceTree = "<group>"; };
+		C55F1AE91E2732B800EF86D7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C55F1AEA1E2732B800EF86D7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				C54AFCA41E260E9000F203C6 /* AppDelegate.m */,
 				C54AFCA61E260E9000F203C6 /* ViewController.h */,
 				C54AFCA71E260E9000F203C6 /* ViewController.m */,
+				C55F1AE91E2732B800EF86D7 /* SecondViewController.h */,
+				C55F1AEA1E2732B800EF86D7 /* SecondViewController.m */,
 				C54AFCDA1E260F3900F203C6 /* SuspendedBall@2x.png */,
 				C54AFCDB1E260F3900F203C6 /* touxiang.png */,
 				C54AFCA91E260E9000F203C6 /* Main.storyboard */,
@@ -294,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C55F1AEB1E2732B800EF86D7 /* SecondViewController.m in Sources */,
 				C54AFCA81E260E9000F203C6 /* ViewController.m in Sources */,
 				C54AFCD91E260F2400F203C6 /* SuspendedBall.m in Sources */,
 				C54AFCA51E260E9000F203C6 /* AppDelegate.m in Sources */,
@@ -529,6 +535,7 @@
 				C54AFCCC1E260E9000F203C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C54AFCCD1E260E9000F203C6 /* Build configuration list for PBXNativeTarget "SuspendedBallTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +544,7 @@
 				C54AFCCF1E260E9000F203C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C54AFCD01E260E9000F203C6 /* Build configuration list for PBXNativeTarget "SuspendedBallUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +553,7 @@
 				C54AFCD21E260E9000F203C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
