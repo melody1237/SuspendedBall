@@ -16,10 +16,6 @@
     }
     return self;
 }
--(void)awakeFromNib {
-    [super awakeFromNib];
-    [self setBall];
-}
 
 -(void)setBall {
     
