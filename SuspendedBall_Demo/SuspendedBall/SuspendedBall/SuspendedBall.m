@@ -7,17 +7,18 @@
 //
 
 #import "SuspendedBall.h"
+#import "UIImageView+WebCache.h"
 
 @implementation SuspendedBall
 
--(instancetype)initWithFrame:(CGRect)frame {
+-(instancetype)initWithFrame:(CGRect)frame andAction:(tapBlock)clickBall {
     if (self = [super initWithFrame:frame]) {
-        [self setBall];
+        [self setBallWithAction:clickBall];
     }
     return self;
 }
 
--(void)setBall {
+-(void)setBallWithAction:(tapBlock)clickBall {
     
     self.image = [UIImage imageNamed:@"SuspendedBall"];
     self.contentMode = UIViewContentModeScaleAspectFit;
@@ -27,8 +28,18 @@
     [self setUserInteractionEnabled:YES];
     [self addGestureRecognizer:panGR];
     [self addGestureRecognizer:tapGR];
+    self.clickBall = clickBall;
 }
 
+-(void)setLocalImageWithImageData:(NSData*)imageData {
+    FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:imageData];
+    self.animatedImage = image;
+}
+
+-(void)setImageWithPath:(NSString *)imagePath {
+    imagePath = [imagePath stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    [self sd_setImageWithURL:[NSURL URLWithString:imagePath] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];
+}
 -(void)tap:(UITapGestureRecognizer*)sender {
     self.clickBall();
     
