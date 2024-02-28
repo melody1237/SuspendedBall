@@ -41,7 +41,7 @@
     [self sd_setImageWithURL:[NSURL URLWithString:imagePath] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];
 }
 -(void)tap:(UITapGestureRecognizer*)sender {
-    self.clickBall();
+    self.clickBall ? self.clickBall() : nil;
     
 }
 -(void)pan:(UIPanGestureRecognizer*)sender {
